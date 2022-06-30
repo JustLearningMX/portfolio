@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari&family=Raleway&display=swap');
+
+:root{
+    --verde: #809A6F; /*rgb(128, 154, 111)*/
+    --rojo: #A25B5B; /*rgb(162, 91, 91)*/
+    --beige: #CC9C75; /*rgb(204, 156, 117)*/
+    --gris: #D5D8B5; /*rgb(213, 216, 181)*/
+    --white: #F0F0F0;
+    --white2: #F5F5F5;
+    --amarillo: #FFE981; /*rgb(255, 233, 129)*/
+    --gradiente-negro: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+html{
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Raleway', 'Gantari', Arial, Helvetica, sans-serif;
+}
+
+*, *:before, *:after{
+    outline: 0;
+    box-sizing: inherit;
+}
+
+body{
+    min-height: 100%;
+    display: grid;
+    grid-template: 
+    "nav" 60px
+    "main" 1fr
+    "footer" 80px;
+    color: var(--white);
+}
+
+#footer{
+    grid-area: footer;
+    background-color: var(--verde);
+}

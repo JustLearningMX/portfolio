@@ -1,0 +1,9 @@
+#main{
+    grid-area: main;
+    background-image: var(--white2);
+}
+
+.main__banner{
+    height: auto;
+    background-image: var(--gradiente-negro);
+}

@@ -1,0 +1,50 @@
+#nav{
+    grid-area: nav;
+    background-color: var(--rojo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav__titulo{
+    /* border: 1px solid green; */
+    width: 70%;    
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.nav__menu{
+    width: 30%;
+    cursor: pointer;
+}
+
+.nav__menu__lista{
+    background-color: var(--rojo);
+    position: absolute;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    padding: .8rem;
+    text-align: center;
+    transition: left 0.3s;
+}
+
+.nav__menu__lista-selected{
+    color: var(--amarillo);
+    transition: 0.5s;
+}
+
+.nav__menu__lista-mostrar{
+    left: 0;
+    transition: 0.5s;
+}
+
+.nav__menu__lista li:not(:last-child){
+    margin-bottom: 1.2rem;
+}
+
+.nav__menu__iconoMenu{
+    font-size: 1.6rem;
+    text-align: center;
+}
