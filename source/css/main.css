@@ -1,9 +1,169 @@
 #main{
     grid-area: main;
-    background-image: var(--white2);
+    background-image: var(--white2);    
+}
+
+.titulos{
+    font-size: 1.4rem;
+}
+
+.cards{
+    transition: transform 0.3s ease-in-out;
+}
+
+.cards:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
 }
 
 .main__banner{
     height: auto;
     background-image: var(--gradiente-negro);
+    display: grid;
+    grid-template: 
+        "foto" 180px
+        "titulo" auto
+        "parrafo" auto
+        "redes" auto;
+}
+
+.main__banner_titulo{
+    grid-area: titulo;
+}
+
+.main__banner_parrafo{
+    grid-area: parrafo;
+}
+
+.main__banner_redes{
+    grid-area: redes;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.main__banner_redes-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: auto;
+}
+
+.main__banner_redes-link > p {    
+    font-size: .6rem;
+    text-align: center;
+}
+
+.main__banner_foto{
+    grid-area: foto;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__banner_foto-container{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.main__banner_foto-container > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.main__sobremi{
+    background-color: var(--azul);
+}
+
+.main__skills_titulo, .main__hobbies_titulo{
+    color: var(--negro);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main__skills_card-container, .main__hobbies_card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.main__skills__card, .main__hobbies__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    height: 120px;
+    color: var(--negro);
+}
+
+.icono{    
+    width: 100%;
+    height: 80px;
+    color: var(--azul);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main__skills__card-nombre, .main__hobbies__card-nombre{
+    background-color: var(--azul);
+    color: var(--white);
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.main__formacion{
+    background-color: var(--azul);
+}
+
+.main__formacion_card-container{ /*Contenedor de las cards de Formación*/
+    /* border: 1px solid crimson; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, 200px); 
+    gap: 1.2rem;
+    padding: 1.2rem;
+    justify-content: center;
+}
+
+.formacion__card__container{ /*Cada Card*/
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px rgba(251, 251, 251, 0.5);    
+}
+
+.formacion__card___imgContainer{ /*Contenedor para las IMG*/
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 120px;
+}
+
+.formacion__card-img{    
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.formacion__card___datosContainer{
+    /* border: 1px solid red; */
+    height: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.formacion__card-nombre{
+    font-weight: 600;
 }

@@ -24,8 +24,12 @@
         </section>
         <header class="nav__menu">
             <ul class="nav__menu__lista">
-                <li class="nav__menu__lista-opciones">Sobre mí</li>
-                <li class="nav__menu__lista-opciones">Skills</li>
+                <li class="nav__menu__lista-opciones">
+                    <a href="#sobreMi">Sobre mí</a>
+                </li>
+                <li class="nav__menu__lista-opciones">
+                    <a href="#skills">Skills</a>                    
+                </li>
                 <li class="nav__menu__lista-opciones">Hobbies</li>
                 <li class="nav__menu__lista-opciones">Formación</li>
                 <li class="nav__menu__lista-opciones">Proyectos</li>
@@ -37,25 +41,113 @@
         </header>
     </nav>
     <main id="main">
-        <section class="main__banner">
+        <section class="main__banner container">
+            <div class="main__banner_titulo titulos">
+                <p>
+                    Hola, mi nombre es Hiram Chávez López y construyo páginas y aplicaciones web.
+                </p>
+            </div>
+            <div class="main__banner_parrafo parrafos">
+                <p>
+                    Estoy en el último semestre de la carrera en Ingeniería de software 
+                    y actualmente estoy participando en el programa Oracle One Next Education
+                    de la mano de Alura Latam.
+                </p>
+            </div>
+            <div class="main__banner_redes">
+                <a href="https://github.com/JustLearningMX" target="_blank" class="main__banner_redes-link">
+                    <i class="fa-brands fa-github"></i>
+                    <p>github</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/hiram-chavez-24126831/" target="_blank" class="main__banner_redes-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p>linkedin</p>
+                </a>
+                <a href="https://twitter.com/hiram_ch" target="_blank" class="main__banner_redes-link">
+                    <i class="fa-brands fa-twitter-square"></i>
+                    <p>twitter</p>
+                </a>
+                <a href="./source/assets/download/Hiram_CV.pdf" download="Hiram_ChavezCV.pdf" target="_blank" class="main__banner_redes-link">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <p>cv</p>
+                </a>                
+                
+            </div>
+            <div class="main__banner_foto">
+                <figure class="main__banner_foto-container">
+                    <img src="./source/assets/hiram.png" alt="Fotografía Hiram Chávez">
+                </figure>
+            </div>            
+        </section>
+
+        <section id="sobreMi" class="main__sobremi container">
+            <div class="main__sobremi_titulo titulos">
+                <p>
+                    Sobre mi.
+                </p>
+            </div>
+            <div class="main__sobremi_parrafo parrafos">
+                <p>
+                    Radico en la ciudad de Tampico, Tamaulipas, México. La mayor parte de mi vida laboral la he realizado
+                    con una empresa del sector energético, Grupo Protexa, en el área de Energía y Petróleo. Soy Ingeniero
+                    en sistemas y participé en proyectos de procura, transporte e instalación de plataformas marinas en el 
+                    golfo de México.
+                </p>
+            </div>
+            <div class="main__sobremi_parrafo parrafos">
+                <p>
+                    Mis funciones eran llevar el control de documentos de todos los proyectos y reportes
+                    diarios de las actividades en campo para conformar el archivo de estimaciones.
+                </p>
+            </div>
+            <div class="main__sobremi_parrafo parrafos">
+                <p>
+                    En el 2018 comencé a estudiar una segunda carrera pero enfocado en el desarrollo de software, buscando 
+                    con esto reinventarme profesionalmente. Estoy en búsqueda de mi primer empleo como desarrollador de 
+                    software para colaborar con personas excepcionales en la creación de proyectos interesantes.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="main__skills container">
+            <div class="main__skills_titulo titulos">
+                <p>
+                    Skills.
+                </p>
+            </div>
+            <div class="main__skills_card-container">
+                
+            </div>
+        </section>
+
+        <section class="main__hobbies container">
+            <div class="main__hobbies_titulo titulos">
+                <p>
+                    Hobbies.
+                </p>
+            </div>
+            <div class="main__hobbies_card-container">
+                
+            </div>
+        </section>
+        
+        <section class="main__formacion container">
+            <div class="main__formacion_titulo titulos">
+                <p>
+                    Formación Académica.
+                </p>
+            </div>
+            <div class="main__formacion_card-container">
+                
+            </div>
+        </section>
+
+        <section class="main__proyectos container">
 
         </section>
-        <section class="main__sobremi">
 
-        </section>
-        <section class="main__skills">
-
-        </section>
-        <section class="main__hobbies">
-
-        </section>
-        <section class="main__formacion">
-
-        </section>
-        <section class="main__proyectos">
-
-        </section>
-        <section class="main__contacto">
+        <section class="main__contacto container">
 
         </section>
     </main>
@@ -68,6 +160,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="module" src="./source/js/seccionSkills.js"></script>
+    <script type="module" src="./source/js/seccionsHobbies.js"></script>
+    <script type="module" src="./source/js/seccionFormacion.js"></script>
 </body>
 
 </html>

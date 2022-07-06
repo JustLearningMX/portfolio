@@ -5,10 +5,13 @@
     --rojo: #A25B5B; /*rgb(162, 91, 91)*/
     --beige: #CC9C75; /*rgb(204, 156, 117)*/
     --gris: #D5D8B5; /*rgb(213, 216, 181)*/
+    --gris-bg: #303841;
     --white: #F0F0F0;
     --white2: #F5F5F5;
     --amarillo: #FFE981; /*rgb(255, 233, 129)*/
     --gradiente-negro: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    --azul: #6E85B7;
+    --negro: #181719;
 }
 
 html{
@@ -30,9 +33,31 @@ body{
     "main" 1fr
     "footer" 80px;
     color: var(--white);
+    line-height: 22px;
 }
+
+/*A los links se le quitan el subrayado*/
+a {
+    text-decoration: none;
+    color: inherit;
+} 
 
 #footer{
     grid-area: footer;
     background-color: var(--verde);
+}
+
+.container{
+    padding: 2rem 1rem;
+}
+
+.titulos{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.parrafos{
+    font-size: 1rem;
+    margin-bottom: 12px;
 }
