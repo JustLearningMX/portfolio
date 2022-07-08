@@ -2,7 +2,7 @@ export const proyectos = [
     {
         'nombre': 'Juego del ahorcado',
         'descripcion': 'Pequeño juego del ahorcado en donde el usuario debe adivinar una serie de letras de una palabra antes de que se terminen sus oportunidades.',
-        'img': '../source/assets/projects/ahorcado.png',
+        'img': '../assets/projects/ahorcado.png',
         'repositorio': 'https://github.com/JustLearningMX/juego-ahorcado',
         'demostracion': 'https://justlearningmx.github.io/juego-ahorcado/',
         'stack': ['HTML', 'CSS', 'JS'],
@@ -11,7 +11,7 @@ export const proyectos = [
     {
         'nombre': 'Purificadora',
         'descripcion': 'Aplicación web que permite llevar el control de compras de botellones por agua por cliente para otorgar un llenado gratis. Actualmente en construcción.',
-        'img': '../source/assets/projects/purificadora.png',
+        'img': '../assets/projects/purificadora.png',
         'repositorio': 'https://github.com/JustLearningMX/purificadora',
         'demostracion': 'https://purificadora-rio-jordan.herokuapp.com/',
         'stack': ['HTML', 'CSS', 'JS'],
@@ -20,7 +20,7 @@ export const proyectos = [
     {
         'nombre': 'Purificadora-api',
         'descripcion': 'API Rest de la aplicación purificadora. Gestiona la información de la BD mediante endpoints que se consumen desde el frontend.',
-        'img': '../source/assets/projects/purificadora-api.png',
+        'img': '../assets/projects/purificadora-api.png',
         'repositorio': 'https://github.com/JustLearningMX/purificadora_api',
         'demostracion': 'https://purificadora-rio-jordan-api.herokuapp.com/v1/api-docs/',
         'stack': ['MongoDB', 'ExpressJS', 'NodeJS', 'JS'],
@@ -29,7 +29,7 @@ export const proyectos = [
     {
         'nombre': 'Schoolwebapp',
         'descripcion': 'Aplicación web que permite a estudiantes y maestros registrarse del colegio ficticio Águila. Se generar un CRUD básico con PHP.',
-        'img': '../source/assets/projects/colegio.png',
+        'img': '../assets/projects/colegio.png',
         'repositorio': 'https://github.com/JustLearningMX/schoolwebapp_pw2u2',
         'demostracion': 'https://safe-stream-39211.herokuapp.com/',
         'stack': ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
@@ -38,7 +38,7 @@ export const proyectos = [
     {
         'nombre': 'flipbook',
         'descripcion': 'Aplicación web frontend que permite comentar libros. Utiliza React para dibujar las vistas y se hace uso de HTML, CSS y JS.',
-        'img': '../source/assets/projects/flipbook.png',
+        'img': '../assets/projects/flipbook.png',
         'repositorio': 'https://github.com/JustLearningMX/libreria-1',
         'demostracion': 'https://libreria-bedu.herokuapp.com/',
         'stack': ['HTML', 'CSS', 'JS', 'React'],
@@ -47,7 +47,7 @@ export const proyectos = [
     {
         'nombre': 'libreriapi',
         'descripcion': 'API Rest de la aplicación flipbook. Gestiona la información de la BD mediante endpoints que se consumen desde el frontend.',
-        'img': '../source/assets/projects/libreriapi.png',
+        'img': '../assets/projects/libreriapi.png',
         'repositorio': 'https://github.com/JustLearningMX/LibreriApi',
         'demostracion': 'https://libreriapi.herokuapp.com/v1/api-docs/',
         'stack': ['MongoDB', 'ExpressJS', 'NodeJS', 'JS'],
