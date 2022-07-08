@@ -19,7 +19,6 @@ const crearCards = ()=>{
     estudios.map(       
         (estudio)=>{
             const cardEstudio = card(clases, estudio);
-            console.log(cardEstudio);
             seccionDeFormacion.appendChild(cardEstudio);
         }
     );

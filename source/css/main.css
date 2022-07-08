@@ -128,7 +128,6 @@
 }
 
 .main__formacion_card-container{ /*Contenedor de las cards de Formación*/
-    /* border: 1px solid crimson; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: repeat(3, 200px); 
@@ -144,7 +143,6 @@
 }
 
 .formacion__card___imgContainer{ /*Contenedor para las IMG*/
-    /* border: 1px solid red; */
     width: 100%;
     height: 120px;
 }
@@ -152,18 +150,95 @@
 .formacion__card-img{    
     height: 120px;
     width: 100%;
-    object-fit: cover;
+    object-fit:cover;    
+}
+
+.formacion__card__container:first-child  .formacion__card-img{
+    object-position: top;
 }
 
 .formacion__card___datosContainer{
-    /* border: 1px solid red; */
     height: calc(100% - 120px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
+    justify-content:center;
 }
 
 .formacion__card-nombre{
     font-weight: 600;
+}
+
+.main__proyectos{
+    background-image: var(--gradiente-negro);
+}
+
+.main__proyectos_card-container{ /*Contenedor de las cards de Proyectos*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, 400px); 
+    gap: 1.7rem;
+    padding: 1.2rem;
+    justify-content: center;
+}
+
+.proyectos__card__container{ /*Cada Card*/
+    overflow: hidden;
+    box-shadow: 1px 1px 2px rgb(213, 216, 181, 0.5);
+    padding-bottom: 1rem;
+}
+
+.proyectos__card___imgContainer{ /*Contenedor para las IMG*/
+    width: 100%;
+    height: 180px;
+}
+
+.proyectos__card-img{
+    height: 180px;
+    width: 100%;
+    object-fit:cover;
+    object-position: top;
+}
+
+.proyectos__card___datosContainer{
+    margin-top: .4rem;
+}
+
+.proyectos__card-descripcion{
+    margin: .4rem 0;
+}
+
+.proyectos__card-nombre{    
+    text-align: center;
+    font-weight: 600;
+}
+
+.proyectos__card__repo{
+    margin-top: 1rem;
+    font-size: 1.1rem;}
+
+.proyectos__card__repo-link{
+    margin-right: 1rem;
+}
+
+.proyectos__card__repo-link:hover,
+.proyectos__card__demo-link:hover{
+    color: var(--amarillo);
+    cursor: pointer;
+}
+
+.proyectos__card__stack{    
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: .6rem;
+}
+
+.proyectos__card__stack-item{
+    border: none;
+    padding: 3px 6px;
+    background-color: var(--rojo);
+    color: var(--white2);
+    border-radius: 40%;
+    text-align: center;
 }
