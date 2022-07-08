@@ -1,4 +1,5 @@
 import { crearElemento } from "../utils/crearNodos.js";
+const __dir = './source/assets/projects/';
 
 export const card = (clases, objDatos)=>{
 
@@ -16,13 +17,14 @@ export const card = (clases, objDatos)=>{
     }
 
     //Función que crea un contenedor para una imagen y agrega la imagen
-    const contenedorImg = ()=>{
+    const contenedorImg = (esProyectos)=>{
 
         const divCardImg = crearElemento('div', [{type: 'class', name: `${clases.divCardImg}`}]);
+        const urlImg = esProyectos ? __dir  + objDatos.img : objDatos.img;
 
         const img = crearElemento('img', [
             {type: 'class', name: `${clases.imgCard}`}, 
-            {type: 'src', name: `${objDatos.img}`},
+            {type: 'src', name: `${urlImg}`},
             {type: 'alt', name: `${objDatos.alt}`}]);
         
         divCardImg.appendChild(img);
@@ -32,7 +34,7 @@ export const card = (clases, objDatos)=>{
 
     if(objDatos.img && !objDatos.proyectos){ //Cards para Formación
         
-        contenedorImg();
+        contenedorImg(false);
         
         const divCardDatos = crearElemento('div', [{type: 'class', name: `${clases.divCardDatos}`}]);
         const nombreCard = crearElemento('p', [{type: 'class', name: `${clases.nombreCard}`}]);
@@ -53,7 +55,7 @@ export const card = (clases, objDatos)=>{
 
     if(objDatos.img && objDatos.proyectos){ //Cards para los proyectos
         
-        contenedorImg();
+        contenedorImg(true);
 
         const divCardDatos = crearElemento('div', [{type: 'class', name: `${clases.divCardDatos}`}]);
         const nombreCard = crearElemento('p', [{type: 'class', name: `${clases.nombreCard}`}]);

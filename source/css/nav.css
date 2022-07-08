@@ -8,7 +8,6 @@
 }
 
 .nav__titulo{
-    /* border: 1px solid green; */
     width: 70%;    
     text-align: center;
     font-size: 1.4rem;
@@ -20,6 +19,7 @@
 }
 
 .nav__menu__lista{
+    display: none;
     background-color: var(--rojo);
     position: absolute;
     top: 60px;
@@ -36,8 +36,10 @@
 }
 
 .nav__menu__lista-mostrar{
+    display: flex;
+    flex-direction: column;
     left: 0;
-    transition: 0.5s;
+    transition: left 0.5s;
 }
 
 .nav__menu__lista li:not(:last-child){

@@ -17,7 +17,7 @@
 }
 
 .main__banner{
-    height: auto;
+    height: 100vh;
     background-image: var(--gradiente-negro);
     display: grid;
     grid-template: 
@@ -176,7 +176,7 @@
 .main__proyectos_card-container{ /*Contenedor de las cards de Proyectos*/
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: repeat(3, 400px); 
+    grid-template-rows: repeat(3, 420px); 
     gap: 1.7rem;
     padding: 1.2rem;
     justify-content: center;
