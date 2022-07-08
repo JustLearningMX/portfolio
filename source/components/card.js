@@ -3,12 +3,12 @@ const __dir = './source/assets/projects/';
 
 export const card = (clases, objDatos)=>{
 
-    const card = crearElemento('div', [{type: 'class', name: `${clases.divCard}`}]); //.main__skills__card
+    const card = crearElemento('div', [{type: 'class', name: `${clases.divCard}`}]); 
     card.classList.add('cards');
 
     if(objDatos.iconAwesome){ //Cards para los skills y hobbies
         
-        const p = crearElemento('p', [{type: 'class', name: `${clases.nombreCard}`}]); //.main__skills__card-nombre
+        const p = crearElemento('p', [{type: 'class', name: `${clases.nombreCard}`}]); 
         const i = crearElemento('i', [{type: 'class', name: `${objDatos.iconAwesome}`}]);
         p.textContent = objDatos.nombre;
         

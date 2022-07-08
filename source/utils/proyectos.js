@@ -51,7 +51,7 @@ export const proyectos = [
     },
     {
         'nombre': 'libreriapi',
-        'descripcion': 'API Rest de la aplicación flipbook. Gestiona la información de la BD mediante endpoints que se consumen desde el frontend.',
+        'descripcion': 'API Rest de la aplicación flipbook. Gestiona la información de la BD mediante endpoints que se consumen desde el frontend. ',
         'img': 'libreriapi.png',
         'repositorio': 'https://github.com/JustLearningMX/LibreriApi',
         'demostracion': 'https://libreriapi.herokuapp.com/v1/api-docs/',
