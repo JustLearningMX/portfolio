@@ -11,6 +11,8 @@
     --amarillo: rgb(255, 233, 129); /*rgb(255, 233, 129)*/
     --gradiente-negro: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     --azul: #6E85B7;
+    --azul2: #EAF2FD;
+    --azul3: #2A7AE4;
     --negro: #181719;
 
     --crimson: rgb(220, 20, 60);
@@ -33,7 +35,7 @@ body{
     grid-template: 
     "nav" 60px
     "main" 1fr
-    "footer" 80px;
+    "footer" 100px;
     color: var(--white);
     line-height: 22px;
 }
@@ -46,7 +48,7 @@ a {
 
 #footer{
     grid-area: footer;
-    background-color: var(--verde);
+    background-color: var(--rojo);
 }
 
 .container{

@@ -1,0 +1,32 @@
+export const inputsContacto = [
+    {
+        type: 'text',
+        name: 'name',
+        placeholder: '\xa0',
+        value: null,
+        required: true,
+        autofocus: false,
+        label: 'Nombre',
+        errorMsg: 'Este campo no puede ir vacío',
+    },
+    {
+        type: 'email',
+        name: 'email',
+        placeholder: '\xa0',
+        value: null,
+        required: true,
+        autofocus: false,
+        label: 'Email',
+        errorMsg: 'Este campo no puede ir vacío',
+    },
+    {
+        type: 'text',
+        name: 'subject',
+        placeholder: '\xa0',
+        value: null,
+        required: true,
+        autofocus: false,
+        label: 'Asunto',
+        errorMsg: 'Este campo no puede ir vacío',
+    },
+];

@@ -251,3 +251,106 @@
     border-radius: 40%;
     text-align: center;
 }
+
+.main__contacto{
+    color: var(--negro);
+}
+
+.main__contacto__form{
+    border: 1px solid var(--gris);
+    padding: 1rem;
+    height: auto;
+    /* box-shadow: 1px 1px 2px rgba(251, 251, 251, 0.5);     */
+}
+
+.contacto__form__inputContainer{
+    height: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    /* box-shadow: 1px 1px 2px rgb(0 0 0 / 50%); */
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+
+.contacto__form__inputContainer:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.form__inputContainer-text{
+    position: absolute;
+    font-size: .8rem;
+    margin-left: 11px;
+    top: calc(25px - .8rem);
+    z-index: 1;
+    pointer-events: none;
+    transform-origin: 0 0;
+    transform: translate3d(0,0,0);
+    transition: all .2s ease;
+    line-height: 1.6rem;
+}
+
+.form__inputContainer-data{
+    border: none;
+    border-bottom: 1px solid var(--gris);
+    position: absolute;
+    height: 50px;
+    width: calc(100%);
+    /* top: calc(30px - 25px); */
+    top: 0;
+    padding: 0 10px;
+    font-size: 1.1rem;
+    display: flex;
+}
+
+.form__inputContainer-data:focus {
+    border-bottom: 2px solid var(--azul);
+    background-color: var(--azul2);
+}
+
+.form__inputContainer-data:not(:placeholder-shown) + .form__inputContainer-text{
+    transform: translate3d(0,-15px,0) scale(.75);
+    color: var(--azul);
+}
+
+.form__inputContainer-error{
+    display: none;
+    position: absolute;
+    font-size: .7rem;
+    margin-left: 10px;
+    bottom: 0;
+}
+
+/* .textArea {
+    height: 100px;
+    margin-bottom: 20px;
+} */
+
+.contacto__form__inputContainer:last-child{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submittButton{    
+    border: none;
+    width: 70%;
+    height: 50px;
+    background-color: var(--azul3);
+    color: var(--white2);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.submittButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
