@@ -43,13 +43,3 @@ a {
     text-decoration: none;
     color: inherit;
 } 
-
-/* Diseño para tabletas */
-  /* @media screen and (min-width: 600px) and (max-width: 1024px) { */
-    
-  /* } */
-
-/* Diseño para pc, laptops */
-/* @media screen and (min-width: 1024px){
-
-} */

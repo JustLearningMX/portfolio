@@ -48,3 +48,19 @@
         padding: calc(2rem + 50px) 3.5rem;
     }
 }
+
+/* Diseño para pc, laptops */
+@media screen and (min-width: 1024px){
+    .titulos{
+        font-size: 1.7rem;
+    }
+
+    .parrafos{
+        font-size: 1.4rem;
+    }
+
+    .container{      
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}

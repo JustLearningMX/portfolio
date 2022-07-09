@@ -32,7 +32,7 @@ const crearForm = ()=>{
     divTxtAreaContainer.appendChild(txtareaMensaje);
     seccionContacto.appendChild(divTxtAreaContainer);
 
-    const divInputSubmitContainer = crearElemento('div', [{type: 'class', name: `${clases.divInputContainer}`}]);
+    const divInputSubmitContainer = crearElemento('div', [{type: 'class', name: `${clases.divInputContainer} contacto__form__txtAreaContainer`}]);
     const inputBoton = crearElemento('input', [
         {
           type: 'id', 

@@ -78,38 +78,21 @@
     text-align: center;
 }
 
-/* Diseño para tabletas */
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+/* Diseño para tabletas y laptops    and (max-width: 1024px) */
+@media screen and (min-width: 600px) {
     
-    .main__proyectos{
-        /* background-image: var(--gradiente-negro); */
-    }
-    
-    .main__proyectos_card-container{ /*Contenedor de las cards de Proyectos*/
-        /* display: grid; */
+    .main__proyectos_card-container{ 
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        /* grid-template-rows: repeat(3, auto);  */
         gap: 1.8rem;
         padding: 1.3rem;
-        /* justify-content: center; */
     }
     
-    .proyectos__card__container{ /*Cada Card*/
-        /* overflow: hidden; */
-        /* box-shadow: 1px 1px 2px rgb(213, 216, 181, 0.5); */
-        /* padding-bottom: 1rem; */
-    }
-    
-    .proyectos__card___imgContainer{ /*Contenedor para las IMG*/
-        /* width: 100%; */
+    .proyectos__card___imgContainer{ 
         height: 200px;
     }
     
     .proyectos__card-img{
         height: 200px;
-        /* width: 100%;
-        object-fit:cover;
-        object-position: top; */
     }
     
     .proyectos__card___datosContainer{
@@ -119,48 +102,50 @@
     .proyectos__card-descripcion{
         margin: .5rem 0;
         height: 110px;
-        /* overflow: hidden; */
-        /* overflow-y: auto; */
         padding: 0 12px;
         font-size: 1.1rem;
     }
     
-    .proyectos__card-nombre{    
-        /* text-align: center;
-        font-weight: 600; */
+    .proyectos__card-nombre{ 
         font-size: 1.2rem;
     }
     
     .proyectos__card__repo{
         margin-top: 1.2rem;
         font-size: 1.2rem;
-        /* padding: 0 10px; */
     }
     
     .proyectos__card__repo-link{
         margin-right: 1.2rem;
     }
     
-    .proyectos__card__repo-link:hover,
-    .proyectos__card__demo-link:hover{
-        /* color: var(--amarillo);
-        cursor: pointer; */
-    }
-    
     .proyectos__card__stack{    
         margin-top: 1.3rem;
-        /* display: flex;
-        justify-content: space-around;
-        font-size: .6rem; */
     }
     
     .proyectos__card__stack-item{
-        /* border: none; */
-        /* padding: 3px 6px; */
-        /* background-color: var(--rojo);
-        color: var(--white2); */
         border-radius: 35%;
-        /* text-align: center; */
     }
 
+}
+
+/* Diseño para pc, laptops */
+@media screen and (min-width: 1024px) {
+    
+    .main__proyectos_card-container{ /*Contenedor de las cards de Proyectos*/
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+    
+    .proyectos__card___imgContainer{ 
+        height: 250px;
+    }
+    
+    .proyectos__card-img{
+        height: 250px;
+    }
+    
+    .proyectos__card__repo{
+        margin-top: .3rem;
+    }
+        
 }
