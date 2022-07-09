@@ -43,3 +43,55 @@
 .formacion__card-nombre{
     font-weight: 600;
 }
+
+/* Diseño para tabletas */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .main__formacion{
+        /* background-color: var(--azul); */
+    }
+    
+    .main__formacion_card-container{ /*Contenedor de las cards de Formación*/
+        /* display: grid; */
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-template-rows: repeat(3, 400px); 
+        gap: 1.5rem;
+        padding: 1.4rem;
+        /* justify-content: center; */
+    }
+    
+    .formacion__card__container{ /*Cada Card*/
+        border-radius: 10px;
+        /* overflow: hidden; */
+        /* box-shadow: 1px 1px 2px rgba(251, 251, 251, 0.5);     */
+    }
+    
+    .formacion__card___imgContainer{ /*Contenedor para las IMG*/
+        /* width: 100%; */
+        height: 220px;
+    }
+    
+    .formacion__card-img{    
+        height: 220px;
+        /* width: 100%; */
+        /* object-fit:cover;     */
+    }
+    
+    .formacion__card__container:first-child  .formacion__card-img{
+        object-position: top;
+    }
+    
+    .formacion__card___datosContainer{
+        height: calc(100% - 220px);
+        font-size: 1.3rem;
+        justify-content: space-evenly;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center; */
+    }
+    
+    .formacion__card-nombre{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+}

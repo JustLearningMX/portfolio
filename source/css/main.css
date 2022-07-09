@@ -5,6 +5,20 @@
 
 .titulos{
     font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 28px;
+}
+
+.parrafos{
+    font-size: 1rem;
+    margin-bottom: 12px;
+    line-height: 25px;
+}
+
+.container{
+    padding: 2rem 1rem;
+    padding-top: 80px;
 }
 
 .cards{
@@ -16,7 +30,21 @@
     transform: scale(1.04);
 }
 
-/* .container:not(first-child){ */
-.container{
-    padding-top: 80px;
+/* Diseño para tabletas */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .titulos{
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        line-height: 30px;
+    }
+
+    .parrafos{
+        font-size: 1.2rem;
+        margin-bottom: 14px;
+        line-height: 27px;
+    }
+
+    .container{
+        padding: calc(2rem + 50px) 3.5rem;
+    }
 }
