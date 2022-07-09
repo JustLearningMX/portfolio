@@ -10,7 +10,15 @@
     <link rel="stylesheet" href="./source/css/reset.css">
     <link rel="stylesheet" href="./source/css/index.css">
     <link rel="stylesheet" href="./source/css/nav.css">
+    <link rel="stylesheet" href="./source/css/footer.css">
+    
     <link rel="stylesheet" href="./source/css/main.css">
+    <link rel="stylesheet" href="./source/css/secciones/main__banner.css">
+    <link rel="stylesheet" href="./source/css/secciones/main__sobremi.css">
+    <link rel="stylesheet" href="./source/css/secciones/main__skillsHobbies.css">
+    <link rel="stylesheet" href="./source/css/secciones/main__formacion.css">
+    <link rel="stylesheet" href="./source/css/secciones/main__proyectos.css">
+    <link rel="stylesheet" href="./source/css/secciones/main__contacto.css">
 
     <script defer src="./source/js/menuPrincipal.js"></script>
 </head>
@@ -25,6 +33,9 @@
         </section>
         <header class="nav__menu">
             <ul class="nav__menu__lista">
+                <li class="nav__menu__lista-opciones">
+                    <a href="#principal">Inicio</a>
+                </li>
                 <li class="nav__menu__lista-opciones">
                     <a href="#sobreMi">Sobre mí</a>
                 </li>
@@ -49,8 +60,9 @@
             </figure>
         </header>
     </nav>
+
     <main id="main">
-        <section class="main__banner container">
+        <section id="principal" class="main__banner container">
             <div class="main__banner_foto">
                 <figure class="main__banner_foto-container">
                     <img src="./source/assets/hiram.png" alt="Fotografía Hiram Chávez">
@@ -182,14 +194,10 @@
                 </p>
             </div>
             <form class="main__contacto__form">
-                <!-- <div class="contacto__form__inputContainer">
-                    <input class="form__inputContainer-data" type="text" name="name" required placeholder="&nbsp;">                    
-                    <span class="form__inputContainer-text">Nombre</span>
-                    <span class="form__inputContainer-error">Este campo no puede ir vacío</span>
-                </div> -->
             </form>
         </section>
     </main>
+
     <footer id="footer">
         <section class="piedepagina">
             Developed by: Hiram Chávez ©. 2022.
