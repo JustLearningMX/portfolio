@@ -1,5 +1,6 @@
 .main__banner{
-    height: calc(100vh - 60px);
+    /* height: calc(100vh - 60px); */
+    height: auto;
     background-image: var(--gradiente-negro);
     display: flex;
     flex-direction: column;
@@ -63,13 +64,13 @@
         grid-template: 
             "titulo foto" auto
             "parrafo foto" auto
-            "redes redes" auto / 1fr .4fr;
+            "redes redes" auto / 1fr .25fr;
     }
     
     .main__banner_redes{
         justify-content:flex-end;
         font-size: 1.6rem;
-        margin-top: 1.2rem;
+        margin-top: .5rem;
     }
 
     .main__banner_redes > a:not(last-child){
@@ -115,7 +116,7 @@
     }
     
     .main__banner_foto {
-        align-items: center;
+        align-items: flex-start;
     }
     
     .main__banner_foto-container{
