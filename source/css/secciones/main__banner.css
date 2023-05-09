@@ -94,8 +94,9 @@
 /* Diseño para pc, laptops */
 @media screen and (min-width: 1024px){
     .main__banner{
-        height: calc(100vh - 60px);
-        gap: 0;
+        /* height: calc(100vh - 60px); */
+        gap: 0; 
+        padding-bottom: 3rem;
     }    
 
     .main__banner_titulo{
