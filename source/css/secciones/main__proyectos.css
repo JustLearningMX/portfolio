@@ -52,8 +52,11 @@
     padding: 0 10px;
 }
 
-.proyectos__card__repo-link{
-    margin-right: 1rem;
+.repo_demo_title {
+    /* border: 1px solid red; */
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: .3rem;
 }
 
 .proyectos__card__repo-link:hover,
@@ -65,8 +68,9 @@
 .proyectos__card__stack{    
     margin-top: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     font-size: .6rem;
+    gap: .5rem;
 }
 
 .proyectos__card__stack-item{
@@ -147,5 +151,6 @@
     .proyectos__card__repo{
         margin-top: .3rem;
     }
+    
         
 }

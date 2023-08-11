@@ -74,7 +74,10 @@ export const card = (clases, objDatos)=>{
             {type: 'href', name: `${objDatos.repositorio}`},
             {type: 'target', name: `_blank`}
         ]);
-        const fontAwesomeRepo = crearElemento('i', [{type: 'class', name: `fa-brands fa-github-alt`}]);
+        const fontAwesomeRepo = crearElemento('i', [{type: 'class', name: `fa-brands fa-github-alt fa-lg`}]);
+        const pRepo = crearElemento('p', [{type: 'class', name: `${clases.repo_demo_title}`}]);
+        pRepo.textContent = 'Repo y demo links:';
+        divCardRepo.appendChild(pRepo);
         repoLink.appendChild(fontAwesomeRepo);
 
         const demoLink = crearElemento('a', [
@@ -82,7 +85,7 @@ export const card = (clases, objDatos)=>{
             {type: 'href', name: `${objDatos.demostracion}`},
             {type: 'target', name: `_blank`}
         ]);
-        const fontAwesomeDemo = crearElemento('i', [{type: 'class', name: `fa-solid fa-play`}]);
+        const fontAwesomeDemo = crearElemento('i', [{type: 'class', name: `fa-solid fa-play fa-lg`}]);
         demoLink.appendChild(fontAwesomeDemo);
 
         divCardRepo.appendChild(repoLink);

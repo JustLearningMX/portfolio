@@ -18,6 +18,7 @@ const clases = {
     
     'divCardStack': 'proyectos__card__stack',
     'divCardStackItem': 'proyectos__card__stack-item',
+    'repo_demo_title': 'repo_demo_title',
 };
 
 const crearCards = ()=>{
